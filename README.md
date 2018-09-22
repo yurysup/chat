@@ -1,4 +1,4 @@
-#WebSocket Chat
+# WebSocket Chat
 
 Simple chat based on WebSocket
 
