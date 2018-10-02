@@ -1,15 +1,17 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-
-<a href="servlet">Click here to see servlet</a>
-<p><button id="sendWSMessage" type="button" onclick="sendDummyMessage();">Start</button></p>
-<script>
-var connection = new WebSocket('ws://localhost:8080/websocket');
-
-function sendDummyMessage() {
-    connection.send("Hello from UI");
-}
-</script>
+<div id="chat-page">
+  <h1>WebSocket Simple Chat</h2>
+  <div id="messages-container">
+    <ul id="messages-list">
+    </ul>
+  </div>
+  <div id="message-input-container">
+    <input type="text" id="message" placeholder="Type a message..." autocomplete="off"/>
+    <button id="send-message-btn" type="button">Send message</button>
+  </div>
+</div>
 </body>
+<script src="/resources/static/js/ws.js">
+</script>
 </html>
